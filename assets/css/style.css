@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Dramaturg';
+  src: url('../fonts/Dramaturg.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'DramaturgSC';
+  src: url('../fonts/DramaturgSC.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DramaturgSC', sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 8px;
+  text-align: center;
+  color: #4e160f;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #4e160f;
+  min-height: 80px;
+  max-height: max-content;
+  width: 100%;
+  font-family: 'DramaturgSC', sans-serif;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  list-style: none;
+}
+
+.navbar-menu-item a {
+  color: #fff;
+  font-size: 4rem;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.navbar-menu-item a:hover {
+  color: #E5C280;
+  text-decoration: underline;
+}
+
+.logo-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo {
+  position: fixed;
+  width: 250px;
+  height: 200px;  
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+}
+
+footer {
+  width: 100%;
+  background-color: #4e160f;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
