@@ -1,0 +1,72 @@
+.crafts {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.crafts h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #4e160f;
+  letter-spacing: 4px;
+  font-family: 'DramaturgSC', sans-serif;
+}
+
+.crafts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.craft-item {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 16px #4e160f44, 0 0 4px #E5C28022;
+  padding: 1.5rem;
+  width: 460px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 3px solid #4e160f;
+}
+
+.craft-item:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 0 24px #E5C280, 0 0 8px #4e160f;
+  border-color: #E5C280;
+}
+
+.craft-item img {
+  width: 100%;
+  height: 358px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px #E5C28066;
+  border: 2px solid #4e160f;
+}
+
+.craft-item h2 {
+  color: #4e160f;
+  font-size: 3.1rem;
+  margin: 0.5rem 0;
+  font-family: 'DramaturgSC', sans-serif;
+  letter-spacing: 2px;
+}
+
+.craft-item p {
+  color: #4e160f;
+  font-size: 2.5rem;
+  font-family: 'DramaturgSC', sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .crafts-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .craft-item {
+    width: 90vw;
+    max-width: 350px;
+  }
+}
+/* ...existing code... */
