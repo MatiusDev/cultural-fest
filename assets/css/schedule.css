@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(to bottom, #fff 25%, #4e160f 25%, #4e160f 75%, #fff 75%); */
   background: radial-gradient(circle,rgba(78, 22, 15, 1) 30%, rgba(78, 22, 15, 1) 65%, rgba(255, 255, 255, 1) 100%);
 }
 
@@ -17,4 +16,10 @@
   width: 100%;
   height: auto;
   border-radius: 10%;
+}
+
+@media (max-width: 768px) {
+  .schedule-container {
+    max-width: 90%;
+  }
 }

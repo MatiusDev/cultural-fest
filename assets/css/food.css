@@ -3,12 +3,17 @@
   text-align: center;
 }
 
+.food-section h1 {
+  font-size: 6rem;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
 .food-container {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
-  margin-top: 40px;
 }
 
 .food-item {
